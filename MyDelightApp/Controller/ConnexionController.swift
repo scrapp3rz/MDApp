@@ -15,6 +15,9 @@ class ConnexionController: UIViewController {
     var logoView: LogoView!
     var connexionView: ConnexionView!
     var currentView: UIView!
+    var myMail: String?
+    var myPassword: String?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +50,21 @@ class ConnexionController: UIViewController {
         }
     }
     
-  
+    func validateConnexion (mailAdress: String?, passWord: String?) {
+        myMail = mailAdress
+        myPassword = passWord
+        
+        if let mail = myMail, mail != "" {
+            if let mdp = myPassword, myPassword != "" {
+                
+            } else {
+                
+            }
+        } else {
+            
+        }
+        
+    }
 
     
     func transition(to: UIView, transition: UIViewAnimationOptions) {

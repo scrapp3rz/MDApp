@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C11C183C2067E96000E76320 /* Alerte.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C183B2067E96000E76320 /* Alerte.swift */; };
 		C156402C2067A43E0082769B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156402B2067A43E0082769B /* AppDelegate.swift */; };
 		C156402E2067A43E0082769B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156402D2067A43E0082769B /* ViewController.swift */; };
 		C15640332067A43E0082769B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15640322067A43E0082769B /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 		C156404A2067B9690082769B /* ConnexionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15640492067B9690082769B /* ConnexionView.swift */; };
 		C156404C2067B98C0082769B /* ConnexionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C156404B2067B98C0082769B /* ConnexionView.xib */; };
 		C156404E2067BA8F0082769B /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156404D2067BA8F0082769B /* UIExtensions.swift */; };
+		C15640502067CA120082769B /* mydelightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156404F2067CA120082769B /* mydelightButton.swift */; };
 		F2D2A845925D18257EDEF6FE /* Pods_MyDelightApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50486DFE8885F0248CB0753E /* Pods_MyDelightApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,7 @@
 		50486DFE8885F0248CB0753E /* Pods_MyDelightApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDelightApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4DA5B28854E2999FC7D303B /* Pods-MyDelightApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDelightApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDelightApp/Pods-MyDelightApp.release.xcconfig"; sourceTree = "<group>"; };
 		A90E39B57BCEEBA7A959AFDA /* Pods-MyDelightApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDelightApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDelightApp/Pods-MyDelightApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C11C183B2067E96000E76320 /* Alerte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerte.swift; sourceTree = "<group>"; };
 		C15640282067A43E0082769B /* MyDelightApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDelightApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C156402B2067A43E0082769B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C156402D2067A43E0082769B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		C15640492067B9690082769B /* ConnexionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnexionView.swift; sourceTree = "<group>"; };
 		C156404B2067B98C0082769B /* ConnexionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnexionView.xib; sourceTree = "<group>"; };
 		C156404D2067BA8F0082769B /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
+		C156404F2067CA120082769B /* mydelightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mydelightButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 			children = (
 				C156404D2067BA8F0082769B /* UIExtensions.swift */,
 				C15640442067A7700082769B /* UIView */,
+				C156404F2067CA120082769B /* mydelightButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 		C15640422067A73C0082769B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C11C183B2067E96000E76320 /* Alerte.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -312,7 +318,9 @@
 				C15640482067B4690082769B /* LogoView.swift in Sources */,
 				C156404A2067B9690082769B /* ConnexionView.swift in Sources */,
 				C156404E2067BA8F0082769B /* UIExtensions.swift in Sources */,
+				C11C183C2067E96000E76320 /* Alerte.swift in Sources */,
 				C156402C2067A43E0082769B /* AppDelegate.swift in Sources */,
+				C15640502067CA120082769B /* mydelightButton.swift in Sources */,
 				C15640462067B2420082769B /* ConnexionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

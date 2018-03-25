@@ -58,7 +58,30 @@ class ConnexionController: UIViewController {
         
         if let mail = myMail, mail != "" {
             if let mdp = myPassword, myPassword != "" {
-                
+                Auth.auth().signIn(withEmail: mail, password: mdp, completion: { (user, error) in
+                    if let erreur = error {
+                        let nsErreur = erreur as NSError
+                        if nsErreur.code == 17011 {
+                            Auth.auth().createUser(withEmail: mail, password: mdp, completion: {(user, error) in
+                                if let erreur = error {
+                                    Alerte().simpleError(controller: self, message: erreur.localizedDescription)
+                                }
+                                if let utilisateur = user {
+                                    // transition vers la creation de l'UsernameVue
+                                    
+                                }
+                            })
+                        } else {
+                            Alerte().simpleError(controller: self, message: erreur.localizedDescription)
+
+                        }
+                    }
+                    if let id = user?.uid {
+                        // vérifier si l'utilisateur existe déjà
+
+                    }
+                    
+                })
             } else {
                 Alerte().simpleError(controller: self, message: "Vous devez entrer un mot de passe")
             }

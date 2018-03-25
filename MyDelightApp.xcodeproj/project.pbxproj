@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		C156402C2067A43E0082769B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156402B2067A43E0082769B /* AppDelegate.swift */; };
 		C156402E2067A43E0082769B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156402D2067A43E0082769B /* ViewController.swift */; };
-		C15640312067A43E0082769B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C156402F2067A43E0082769B /* Main.storyboard */; };
 		C15640332067A43E0082769B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15640322067A43E0082769B /* Assets.xcassets */; };
 		C15640362067A43E0082769B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15640342067A43E0082769B /* LaunchScreen.storyboard */; };
+		C156403E2067A4F30082769B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C156403D2067A4F30082769B /* GoogleService-Info.plist */; };
+		C15640462067B2420082769B /* ConnexionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15640452067B2420082769B /* ConnexionController.swift */; };
+		C15640482067B4690082769B /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15640472067B4690082769B /* LogoView.swift */; };
+		F2D2A845925D18257EDEF6FE /* Pods_MyDelightApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50486DFE8885F0248CB0753E /* Pods_MyDelightApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50486DFE8885F0248CB0753E /* Pods_MyDelightApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDelightApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4DA5B28854E2999FC7D303B /* Pods-MyDelightApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDelightApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDelightApp/Pods-MyDelightApp.release.xcconfig"; sourceTree = "<group>"; };
+		A90E39B57BCEEBA7A959AFDA /* Pods-MyDelightApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDelightApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDelightApp/Pods-MyDelightApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C15640282067A43E0082769B /* MyDelightApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDelightApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C156402B2067A43E0082769B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C156402D2067A43E0082769B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C15640302067A43E0082769B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C15640322067A43E0082769B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C15640352067A43E0082769B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C15640372067A43E0082769B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C156403D2067A4F30082769B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C15640452067B2420082769B /* ConnexionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnexionController.swift; sourceTree = "<group>"; };
+		C15640472067B4690082769B /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D2A845925D18257EDEF6FE /* Pods_MyDelightApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13C74D367C6B56553721258D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50486DFE8885F0248CB0753E /* Pods_MyDelightApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1DC8D1393B4FB33B6BCA7981 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A90E39B57BCEEBA7A959AFDA /* Pods-MyDelightApp.debug.xcconfig */,
+				A4DA5B28854E2999FC7D303B /* Pods-MyDelightApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C156401F2067A43E0082769B = {
 			isa = PBXGroup;
 			children = (
 				C156402A2067A43E0082769B /* MyDelightApp */,
 				C15640292067A43E0082769B /* Products */,
+				1DC8D1393B4FB33B6BCA7981 /* Pods */,
+				13C74D367C6B56553721258D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +82,64 @@
 		C156402A2067A43E0082769B /* MyDelightApp */ = {
 			isa = PBXGroup;
 			children = (
+				C15640432067A7500082769B /* Firebase Services */,
+				C15640422067A73C0082769B /* Model */,
+				C15640412067A7360082769B /* View */,
+				C15640402067A72B0082769B /* Controller */,
 				C156402B2067A43E0082769B /* AppDelegate.swift */,
 				C156402D2067A43E0082769B /* ViewController.swift */,
-				C156402F2067A43E0082769B /* Main.storyboard */,
 				C15640322067A43E0082769B /* Assets.xcassets */,
 				C15640342067A43E0082769B /* LaunchScreen.storyboard */,
-				C15640372067A43E0082769B /* Info.plist */,
+				C156403F2067A4F90082769B /* Plist */,
 			);
 			path = MyDelightApp;
+			sourceTree = "<group>";
+		};
+		C156403F2067A4F90082769B /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				C156403D2067A4F30082769B /* GoogleService-Info.plist */,
+				C15640372067A43E0082769B /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		C15640402067A72B0082769B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C15640452067B2420082769B /* ConnexionController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C15640412067A7360082769B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C15640442067A7700082769B /* UIView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C15640422067A73C0082769B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C15640432067A7500082769B /* Firebase Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Firebase Services";
+			sourceTree = "<group>";
+		};
+		C15640442067A7700082769B /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				C15640472067B4690082769B /* LogoView.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C156403A2067A43E0082769B /* Build configuration list for PBXNativeTarget "MyDelightApp" */;
 			buildPhases = (
+				9B7EB8D2C041C79CE43DFD71 /* [CP] Check Pods Manifest.lock */,
 				C15640242067A43E0082769B /* Sources */,
 				C15640252067A43E0082769B /* Frameworks */,
 				C15640262067A43E0082769B /* Resources */,
+				A5F4C25A182F7CCA2C8107E8 /* [CP] Embed Pods Frameworks */,
+				2BF8C0D567E65A09B31410AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +205,93 @@
 			buildActionMask = 2147483647;
 			files = (
 				C15640362067A43E0082769B /* LaunchScreen.storyboard in Resources */,
+				C156403E2067A4F30082769B /* GoogleService-Info.plist in Resources */,
 				C15640332067A43E0082769B /* Assets.xcassets in Resources */,
-				C15640312067A43E0082769B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BF8C0D567E65A09B31410AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyDelightApp/Pods-MyDelightApp-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDelightApp/Pods-MyDelightApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B7EB8D2C041C79CE43DFD71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyDelightApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5F4C25A182F7CCA2C8107E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyDelightApp/Pods-MyDelightApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDelightApp/Pods-MyDelightApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C15640242067A43E0082769B /* Sources */ = {
@@ -137,21 +299,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C156402E2067A43E0082769B /* ViewController.swift in Sources */,
+				C15640482067B4690082769B /* LogoView.swift in Sources */,
 				C156402C2067A43E0082769B /* AppDelegate.swift in Sources */,
+				C15640462067B2420082769B /* ConnexionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C156402F2067A43E0082769B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C15640302067A43E0082769B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C15640342067A43E0082769B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,11 +428,13 @@
 		};
 		C156403B2067A43E0082769B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A90E39B57BCEEBA7A959AFDA /* Pods-MyDelightApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W72835Q984;
-				INFOPLIST_FILE = MyDelightApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyDelightApp/Plist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vp.MyDelightApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,11 +445,13 @@
 		};
 		C156403C2067A43E0082769B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4DA5B28854E2999FC7D303B /* Pods-MyDelightApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W72835Q984;
-				INFOPLIST_FILE = MyDelightApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyDelightApp/Plist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vp.MyDelightApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -21,13 +21,14 @@ class ConnexionController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        keyboard()
         view.backgroundColor = .white
         logoView = LogoView(frame: view.bounds)
         connexionView = ConnexionView(frame: view.bounds)
         connexionView.addToController(controller: self)
         view.addSubview(logoView)
         currentView = logoView
-        
+         
         /*
          A faire :
          - montrer logo (image accueil)

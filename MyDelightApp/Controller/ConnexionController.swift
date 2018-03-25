@@ -24,6 +24,7 @@ class ConnexionController: UIViewController {
         view.backgroundColor = .white
         logoView = LogoView(frame: view.bounds)
         connexionView = ConnexionView(frame: view.bounds)
+        connexionView.addToController(controller: self)
         view.addSubview(logoView)
         currentView = logoView
         
@@ -58,10 +59,10 @@ class ConnexionController: UIViewController {
             if let mdp = myPassword, myPassword != "" {
                 
             } else {
-                
+                Alerte().simpleError(controller: self, message: "Vous devez entrer un mot de passe")
             }
         } else {
-            
+            Alerte().simpleError(controller: self, message: "Vous devez entrer une adresse mail")
         }
         
     }

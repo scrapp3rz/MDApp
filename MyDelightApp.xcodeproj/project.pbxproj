@@ -14,6 +14,9 @@
 		C156403E2067A4F30082769B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C156403D2067A4F30082769B /* GoogleService-Info.plist */; };
 		C15640462067B2420082769B /* ConnexionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15640452067B2420082769B /* ConnexionController.swift */; };
 		C15640482067B4690082769B /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15640472067B4690082769B /* LogoView.swift */; };
+		C156404A2067B9690082769B /* ConnexionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15640492067B9690082769B /* ConnexionView.swift */; };
+		C156404C2067B98C0082769B /* ConnexionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C156404B2067B98C0082769B /* ConnexionView.xib */; };
+		C156404E2067BA8F0082769B /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156404D2067BA8F0082769B /* UIExtensions.swift */; };
 		F2D2A845925D18257EDEF6FE /* Pods_MyDelightApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50486DFE8885F0248CB0753E /* Pods_MyDelightApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,9 @@
 		C156403D2067A4F30082769B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C15640452067B2420082769B /* ConnexionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnexionController.swift; sourceTree = "<group>"; };
 		C15640472067B4690082769B /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		C15640492067B9690082769B /* ConnexionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnexionView.swift; sourceTree = "<group>"; };
+		C156404B2067B98C0082769B /* ConnexionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnexionView.xib; sourceTree = "<group>"; };
+		C156404D2067BA8F0082769B /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 		C15640412067A7360082769B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C156404D2067BA8F0082769B /* UIExtensions.swift */,
 				C15640442067A7700082769B /* UIView */,
 			);
 			path = View;
@@ -138,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				C15640472067B4690082769B /* LogoView.swift */,
+				C15640492067B9690082769B /* ConnexionView.swift */,
+				C156404B2067B98C0082769B /* ConnexionView.xib */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -206,6 +215,7 @@
 			files = (
 				C15640362067A43E0082769B /* LaunchScreen.storyboard in Resources */,
 				C156403E2067A4F30082769B /* GoogleService-Info.plist in Resources */,
+				C156404C2067B98C0082769B /* ConnexionView.xib in Resources */,
 				C15640332067A43E0082769B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +310,8 @@
 			files = (
 				C156402E2067A43E0082769B /* ViewController.swift in Sources */,
 				C15640482067B4690082769B /* LogoView.swift in Sources */,
+				C156404A2067B9690082769B /* ConnexionView.swift in Sources */,
+				C156404E2067BA8F0082769B /* UIExtensions.swift in Sources */,
 				C156402C2067A43E0082769B /* AppDelegate.swift in Sources */,
 				C15640462067B2420082769B /* ConnexionController.swift in Sources */,
 			);

@@ -103,7 +103,7 @@ class ConnexionController: UIViewController {
     }
     
     func checkUser(id: String) {
-        BDD().checkIfUserExist(id: id) { (user) -> (Void) in
+        BDD().getUser(id: id) { (user) -> (Void) in
             if user != nil {
                 print("User found!")
             } else {

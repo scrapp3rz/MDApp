@@ -11,7 +11,7 @@ import FirebaseDatabase
 
 class BDD {
     
-    func checkIfUserExist(id: String, completion: UserCompletion?) {
+    func getUser(id: String, completion: UserCompletion?) {
         Ref().specificUser(id: id).observe(.value) { (snapshot) in
             if snapshot.exists(), let _ = snapshot.value as?[String: AnyObject] {
                 completion?(User(snapshot: snapshot))
@@ -36,7 +36,7 @@ class BDD {
     func updateUser(id: String, dict: [String: AnyObject], completion: @escaping UserCompletion) {
         Ref().specificUser(id: id).updateChildValues(dict) { (error, ref) in
             if error == nil{
-                self.checkIfUserExist(id: id, completion: { (user) -> (Void) in
+                self.getUser(id: id, completion: { (user) -> (Void) in
                     completion(user)
                 })
             }

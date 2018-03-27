@@ -53,7 +53,7 @@ class UsernameView: UIView {
             errorLabel.text = "Vous devez choisir un nom d'utilisateur"
         } else if newUsername .contains(" ") {
             canCreateUsername = false
-            errorLabel.text = "Votre nom d'utilisateur ne peut pas comporter d'espace"
+            errorLabel.text = "Le nom ne peut pas comporter d'espace"
         } else if newUsername.count >= 21 {
             canCreateUsername = false
             errorLabel.text = "Nom d'utilisateur trop long"

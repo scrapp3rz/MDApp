@@ -15,6 +15,7 @@ class ConnexionController: UIViewController {
     var logoView: LogoView!
     var connexionView: ConnexionView!
     var currentView: UIView!
+    var usernameView: UsernameView!
     var myMail: String?
     var myPassword: String?
     
@@ -26,6 +27,8 @@ class ConnexionController: UIViewController {
         logoView = LogoView(frame: view.bounds)
         connexionView = ConnexionView(frame: view.bounds)
         connexionView.addToController(controller: self)
+        usernameView = UsernameView(frame: view.bounds)
+        usernameView.addController(controller: self)
         view.addSubview(logoView)
         currentView = logoView
          
@@ -105,6 +108,7 @@ class ConnexionController: UIViewController {
                 print("User found!")
             } else {
                 print("User not found")
+                self.transition(to: self.usernameView, transition: .transitionFlipFromRight)
             }
         }
     }

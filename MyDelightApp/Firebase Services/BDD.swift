@@ -22,7 +22,15 @@ class BDD {
         
     }
     
-    
+    func usernameExist(username: String, completion: successCompletion?) {
+        Ref().userRoot.queryOrdered(byChild: "username").queryEqual(toValue: username).observeSingleEvent(of: .value) {(snapshot) in
+            if snapshot.exists() {
+                completion?(true, "")
+            } else {
+                completion?(false, "Nom d'utilisateur déjà pris")
+            }
+        }
+    }
     
     
 }

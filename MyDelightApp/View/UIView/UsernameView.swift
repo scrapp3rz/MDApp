@@ -9,8 +9,18 @@
 import UIKit
 
 class UsernameView: UIView {
-
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
+    
+    
     var vue: UIView!
+    var connexionController: ConnexionController?
+    var canCreateUsername = false
+    
+    
+    
+    
     
     
     override init(frame: CGRect) {
@@ -23,5 +33,46 @@ class UsernameView: UIView {
         vue = chargerXib()
     }
     
+    func addController(controller: ConnexionController) {
+        self.connexionController = controller
+        usernameTextField.addTarget(self, action: #selector(textUpdated), for: .editingChanged)
+    }
+    
+    @IBAction func validerButton(_ sender: Any) {
+        
+    }
 
+    @IBAction func backButton(_ sender: Any) {
+        connexionController?.transition(to: (connexionController?.connexionView)!, transition: .transitionFlipFromLeft)
+    }
+    
+    @objc func textUpdated(_ textField: UITextField) {
+        guard let newUsername = textField.text else { return }
+        if newUsername == "" {
+            canCreateUsername = false
+            errorLabel.text = "Vous devez choisir un nom d'utilisateur"
+        } else if newUsername .contains(" ") {
+            canCreateUsername = false
+            errorLabel.text = "Votre nom d'utilisateur ne peut pas comporter d'espace"
+        } else if newUsername.count >= 21 {
+            canCreateUsername = false
+            errorLabel.text = "Nom d'utilisateur trop long"
+        } else {
+            
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
+

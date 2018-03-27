@@ -33,4 +33,21 @@ class BDD {
     }
     
     
+    func updateUser(id: String, dict: [String: AnyObject], completion: @escaping UserCompletion) {
+        Ref().specificUser(id: id).updateChildValues(dict) { (error, ref) in
+            if error == nil{
+                self.checkIfUserExist(id: id, completion: { (user) -> (Void) in
+                    completion(user)
+                })
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
 }

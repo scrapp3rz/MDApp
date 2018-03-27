@@ -70,9 +70,9 @@ class ConnexionController: UIViewController {
                                 if let erreur = error {
                                     Alerte().simpleError(controller: self, message: erreur.localizedDescription)
                                 }
-                                if let utilisateur = user {
-                                    // transition vers la creation de l'UsernameVue
-                                    
+                                if user != nil {
+                                    // transition vers UsernameVue
+                                    self.transition(to: self.usernameView, transition: .transitionFlipFromRight)
                                 }
                             })
                         } else {
@@ -82,7 +82,7 @@ class ConnexionController: UIViewController {
                     }
                     if let id = user?.uid {
                         // vérifier si l'utilisateur existe déjà
-
+                            self.checkUser(id: id)
                     }
                     
                 })
@@ -117,6 +117,7 @@ class ConnexionController: UIViewController {
     
     func goToApp() {
         // instancier le tabBar
+        print("en direction de l'appli/tabBar")
     }
     
     

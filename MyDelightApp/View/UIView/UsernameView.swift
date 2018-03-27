@@ -43,6 +43,7 @@ class UsernameView: UIView {
             BDD().updateUser(dict: ["username": usernameTextField.text! as AnyObject], completion: {(user) -> (Void) in
                 if user != nil {
                     ME = user!
+                    self.connexionController?.goToApp()
                 }
             })
         }

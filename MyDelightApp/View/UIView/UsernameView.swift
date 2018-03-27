@@ -58,7 +58,14 @@ class UsernameView: UIView {
             canCreateUsername = false
             errorLabel.text = "Nom d'utilisateur trop long"
         } else {
-            
+            BDD().usernameExist(username: newUsername, completion: { (success, error) -> (Void) in
+                guard success != nil,
+                    error != nil else { return }
+                self.canCreateUsername = success!
+                self.errorLabel.text = error!
+                
+                
+            })
         }
     }
     

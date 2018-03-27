@@ -25,6 +25,7 @@
 		C156404C2067B98C0082769B /* ConnexionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C156404B2067B98C0082769B /* ConnexionView.xib */; };
 		C156404E2067BA8F0082769B /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156404D2067BA8F0082769B /* UIExtensions.swift */; };
 		C15640502067CA120082769B /* mydelightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156404F2067CA120082769B /* mydelightButton.swift */; };
+		C1D7D877206AE48000CA9BE6 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D7D876206AE48000CA9BE6 /* Constantes.swift */; };
 		F2D2A845925D18257EDEF6FE /* Pods_MyDelightApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50486DFE8885F0248CB0753E /* Pods_MyDelightApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		C156404B2067B98C0082769B /* ConnexionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnexionView.xib; sourceTree = "<group>"; };
 		C156404D2067BA8F0082769B /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		C156404F2067CA120082769B /* mydelightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mydelightButton.swift; sourceTree = "<group>"; };
+		C1D7D876206AE48000CA9BE6 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		C156402A2067A43E0082769B /* MyDelightApp */ = {
 			isa = PBXGroup;
 			children = (
+				C1D7D875206AE44F00CA9BE6 /* Resources */,
 				C15640432067A7500082769B /* Firebase Services */,
 				C15640422067A73C0082769B /* Model */,
 				C15640412067A7360082769B /* View */,
@@ -173,6 +176,14 @@
 				C12E7C69206AA07D009A0AFF /* UsernameView.xib */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		C1D7D875206AE44F00CA9BE6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1D7D876206AE48000CA9BE6 /* Constantes.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +349,7 @@
 				C15640482067B4690082769B /* LogoView.swift in Sources */,
 				C156404A2067B9690082769B /* ConnexionView.swift in Sources */,
 				C156404E2067BA8F0082769B /* UIExtensions.swift in Sources */,
+				C1D7D877206AE48000CA9BE6 /* Constantes.swift in Sources */,
 				C11C183C2067E96000E76320 /* Alerte.swift in Sources */,
 				C12E7C60206A3349009A0AFF /* User.swift in Sources */,
 				C156402C2067A43E0082769B /* AppDelegate.swift in Sources */,

@@ -106,6 +106,8 @@ class ConnexionController: UIViewController {
         BDD().getUser(id: id) { (user) -> (Void) in
             if user != nil {
                 print("User found!")
+                ME = user!
+                self.goToApp()
             } else {
                 print("User not found")
                 self.transition(to: self.usernameView, transition: .transitionFlipFromRight)
@@ -113,7 +115,9 @@ class ConnexionController: UIViewController {
         }
     }
     
-    
+    func goToApp() {
+        // instancier le tabBar
+    }
     
     
     

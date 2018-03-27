@@ -8,6 +8,7 @@
 
 import Foundation
 import FirebaseDatabase
+import FirebaseAuth
 
 class BDD {
     
@@ -33,7 +34,9 @@ class BDD {
     }
     
     
-    func updateUser(id: String, dict: [String: AnyObject], completion: @escaping UserCompletion) {
+    func updateUser(dict: [String: AnyObject], completion: @escaping UserCompletion) {
+        guard let id = Auth.auth().currentUser?.uid
+            else { completion(nil); return }
         Ref().specificUser(id: id).updateChildValues(dict) { (error, ref) in
             if error == nil{
                 self.getUser(id: id, completion: { (user) -> (Void) in

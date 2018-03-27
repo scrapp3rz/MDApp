@@ -39,6 +39,10 @@ class UsernameView: UIView {
     }
     
     @IBAction func validerButton(_ sender: Any) {
+        if usernameTextField != nil, canCreateUsername {
+            BDD().updateUser(dict: <#T##[String : AnyObject]#>, completion: <#T##UserCompletion##UserCompletion##(User?) -> (Void)#>)
+        }
+        
         
     }
 

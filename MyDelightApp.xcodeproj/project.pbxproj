@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		C11C183C2067E96000E76320 /* Alerte.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11C183B2067E96000E76320 /* Alerte.swift */; };
 		C12E7C60206A3349009A0AFF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E7C5F206A3349009A0AFF /* User.swift */; };
+		C12E7C62206A6542009A0AFF /* ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E7C61206A6542009A0AFF /* ref.swift */; };
+		C12E7C64206A6680009A0AFF /* BDD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E7C63206A6680009A0AFF /* BDD.swift */; };
+		C12E7C66206A6700009A0AFF /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E7C65206A6700009A0AFF /* Typealias.swift */; };
 		C156402C2067A43E0082769B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156402B2067A43E0082769B /* AppDelegate.swift */; };
 		C156402E2067A43E0082769B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156402D2067A43E0082769B /* ViewController.swift */; };
 		C15640332067A43E0082769B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15640322067A43E0082769B /* Assets.xcassets */; };
@@ -29,6 +32,9 @@
 		A90E39B57BCEEBA7A959AFDA /* Pods-MyDelightApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDelightApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDelightApp/Pods-MyDelightApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C11C183B2067E96000E76320 /* Alerte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerte.swift; sourceTree = "<group>"; };
 		C12E7C5F206A3349009A0AFF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C12E7C61206A6542009A0AFF /* ref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ref.swift; sourceTree = "<group>"; };
+		C12E7C63206A6680009A0AFF /* BDD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDD.swift; sourceTree = "<group>"; };
+		C12E7C65206A6700009A0AFF /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		C15640282067A43E0082769B /* MyDelightApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDelightApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C156402B2067A43E0082769B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C156402D2067A43E0082769B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,8 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				C156404D2067BA8F0082769B /* UIExtensions.swift */,
-				C15640442067A7700082769B /* UIView */,
 				C156404F2067CA120082769B /* mydelightButton.swift */,
+				C15640442067A7700082769B /* UIView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,6 +152,9 @@
 		C15640432067A7500082769B /* Firebase Services */ = {
 			isa = PBXGroup;
 			children = (
+				C12E7C61206A6542009A0AFF /* ref.swift */,
+				C12E7C63206A6680009A0AFF /* BDD.swift */,
+				C12E7C65206A6700009A0AFF /* Typealias.swift */,
 			);
 			path = "Firebase Services";
 			sourceTree = "<group>";
@@ -318,13 +327,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C156402E2067A43E0082769B /* ViewController.swift in Sources */,
+				C12E7C64206A6680009A0AFF /* BDD.swift in Sources */,
 				C15640482067B4690082769B /* LogoView.swift in Sources */,
 				C156404A2067B9690082769B /* ConnexionView.swift in Sources */,
 				C156404E2067BA8F0082769B /* UIExtensions.swift in Sources */,
 				C11C183C2067E96000E76320 /* Alerte.swift in Sources */,
 				C12E7C60206A3349009A0AFF /* User.swift in Sources */,
 				C156402C2067A43E0082769B /* AppDelegate.swift in Sources */,
+				C12E7C62206A6542009A0AFF /* ref.swift in Sources */,
 				C15640502067CA120082769B /* mydelightButton.swift in Sources */,
+				C12E7C66206A6700009A0AFF /* Typealias.swift in Sources */,
 				C15640462067B2420082769B /* ConnexionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

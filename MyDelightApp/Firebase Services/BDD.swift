@@ -11,7 +11,14 @@ import FirebaseDatabase
 
 class BDD {
     
-    func checkIfUserExist(id: String) {
+    func checkIfUserExist(id: String, completion: UserCompletion?) {
+        Ref().specificUser(id: id).observe(.value) { (snapshot) in
+            if snapshot.exists(), let _ = snapshot.value as?[String: AnyObject] {
+                completion?(User(snapshot: snapshot))
+            } else {
+                completion?(nil)
+            }
+        }
         
     }
     

@@ -12,6 +12,8 @@
 		C12E7C62206A6542009A0AFF /* ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E7C61206A6542009A0AFF /* ref.swift */; };
 		C12E7C64206A6680009A0AFF /* BDD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E7C63206A6680009A0AFF /* BDD.swift */; };
 		C12E7C66206A6700009A0AFF /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E7C65206A6700009A0AFF /* Typealias.swift */; };
+		C12E7C68206AA012009A0AFF /* UsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12E7C67206AA012009A0AFF /* UsernameView.swift */; };
+		C12E7C6A206AA07D009A0AFF /* UsernameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C12E7C69206AA07D009A0AFF /* UsernameView.xib */; };
 		C156402C2067A43E0082769B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156402B2067A43E0082769B /* AppDelegate.swift */; };
 		C156402E2067A43E0082769B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156402D2067A43E0082769B /* ViewController.swift */; };
 		C15640332067A43E0082769B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15640322067A43E0082769B /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		C12E7C61206A6542009A0AFF /* ref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ref.swift; sourceTree = "<group>"; };
 		C12E7C63206A6680009A0AFF /* BDD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDD.swift; sourceTree = "<group>"; };
 		C12E7C65206A6700009A0AFF /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		C12E7C67206AA012009A0AFF /* UsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameView.swift; sourceTree = "<group>"; };
+		C12E7C69206AA07D009A0AFF /* UsernameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsernameView.xib; sourceTree = "<group>"; };
 		C15640282067A43E0082769B /* MyDelightApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDelightApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C156402B2067A43E0082769B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C156402D2067A43E0082769B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 				C15640472067B4690082769B /* LogoView.swift */,
 				C15640492067B9690082769B /* ConnexionView.swift */,
 				C156404B2067B98C0082769B /* ConnexionView.xib */,
+				C12E7C67206AA012009A0AFF /* UsernameView.swift */,
+				C12E7C69206AA07D009A0AFF /* UsernameView.xib */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C15640362067A43E0082769B /* LaunchScreen.storyboard in Resources */,
+				C12E7C6A206AA07D009A0AFF /* UsernameView.xib in Resources */,
 				C156403E2067A4F30082769B /* GoogleService-Info.plist in Resources */,
 				C156404C2067B98C0082769B /* ConnexionView.xib in Resources */,
 				C15640332067A43E0082769B /* Assets.xcassets in Resources */,
@@ -334,6 +341,7 @@
 				C11C183C2067E96000E76320 /* Alerte.swift in Sources */,
 				C12E7C60206A3349009A0AFF /* User.swift in Sources */,
 				C156402C2067A43E0082769B /* AppDelegate.swift in Sources */,
+				C12E7C68206AA012009A0AFF /* UsernameView.swift in Sources */,
 				C12E7C62206A6542009A0AFF /* ref.swift in Sources */,
 				C15640502067CA120082769B /* mydelightButton.swift in Sources */,
 				C12E7C66206A6700009A0AFF /* Typealias.swift in Sources */,

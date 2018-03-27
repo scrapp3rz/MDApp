@@ -45,6 +45,7 @@ class ConnexionController: UIViewController {
         super.viewDidAppear(animated)
         if let id = Auth.auth().currentUser?.uid {
             // passer à l'application
+            checkUser(id: id)
         } else {
             // passer à vue d'identification
             transition(to: connexionView, transition: .transitionFlipFromRight)
@@ -98,7 +99,15 @@ class ConnexionController: UIViewController {
         }
     }
     
-    
+    func checkUser(id: String) {
+        BDD().checkIfUserExist(id: id) { (user) -> (Void) in
+            if user != nil {
+                print("User found!")
+            } else {
+                print("User not found")
+            }
+        }
+    }
     
     
     

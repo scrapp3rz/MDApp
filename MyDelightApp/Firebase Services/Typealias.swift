@@ -8,7 +8,7 @@
 
 import UIKit
 
-typealias userCompletion = (_ user: user?) -> (Void)
+typealias UserCompletion = (_ user: User?) -> (Void)
 
 
 

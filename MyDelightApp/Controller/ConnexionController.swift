@@ -117,7 +117,9 @@ class ConnexionController: UIViewController {
     
     func goToApp() {
         // instancier le tabBar
-        print("en direction de l'appli/tabBar")
+     //   print("en direction de l'appli/tabBar")
+        let tab = MyTabBar()
+        self.present(tab, animated: true, completion: nil)
         
     }
     

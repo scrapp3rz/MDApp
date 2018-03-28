@@ -26,6 +26,15 @@
 		C156404E2067BA8F0082769B /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156404D2067BA8F0082769B /* UIExtensions.swift */; };
 		C15640502067CA120082769B /* mydelightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C156404F2067CA120082769B /* mydelightButton.swift */; };
 		C1D7D877206AE48000CA9BE6 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D7D876206AE48000CA9BE6 /* Constantes.swift */; };
+		C1D7D87B206B8A2100CA9BE6 /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D7D87A206B8A2100CA9BE6 /* MyTabBar.swift */; };
+		C1D7D87D206B8AE300CA9BE6 /* FilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D7D87C206B8AE300CA9BE6 /* FilController.swift */; };
+		C1D7D880206B8B1D00CA9BE6 /* searchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D7D87E206B8B1D00CA9BE6 /* searchController.swift */; };
+		C1D7D881206B8B1D00CA9BE6 /* searchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1D7D87F206B8B1D00CA9BE6 /* searchController.xib */; };
+		C1D7D884206B8B6C00CA9BE6 /* publicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D7D882206B8B6C00CA9BE6 /* publicationController.swift */; };
+		C1D7D885206B8B6C00CA9BE6 /* publicationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1D7D883206B8B6C00CA9BE6 /* publicationController.xib */; };
+		C1D7D889206B9C6F00CA9BE6 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D7D888206B9C6F00CA9BE6 /* ProfileController.swift */; };
+		C1D7D88B206B9C9800CA9BE6 /* MyNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D7D88A206B9C9800CA9BE6 /* MyNav.swift */; };
+		C1D7D88D206BA9F500CA9BE6 /* RecipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D7D88C206BA9F500CA9BE6 /* RecipeController.swift */; };
 		F2D2A845925D18257EDEF6FE /* Pods_MyDelightApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50486DFE8885F0248CB0753E /* Pods_MyDelightApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +63,15 @@
 		C156404D2067BA8F0082769B /* UIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		C156404F2067CA120082769B /* mydelightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mydelightButton.swift; sourceTree = "<group>"; };
 		C1D7D876206AE48000CA9BE6 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
+		C1D7D87A206B8A2100CA9BE6 /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
+		C1D7D87C206B8AE300CA9BE6 /* FilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilController.swift; sourceTree = "<group>"; };
+		C1D7D87E206B8B1D00CA9BE6 /* searchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchController.swift; sourceTree = "<group>"; };
+		C1D7D87F206B8B1D00CA9BE6 /* searchController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = searchController.xib; sourceTree = "<group>"; };
+		C1D7D882206B8B6C00CA9BE6 /* publicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = publicationController.swift; sourceTree = "<group>"; };
+		C1D7D883206B8B6C00CA9BE6 /* publicationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = publicationController.xib; sourceTree = "<group>"; };
+		C1D7D888206B9C6F00CA9BE6 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		C1D7D88A206B9C9800CA9BE6 /* MyNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNav.swift; sourceTree = "<group>"; };
+		C1D7D88C206BA9F500CA9BE6 /* RecipeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +151,14 @@
 			isa = PBXGroup;
 			children = (
 				C15640452067B2420082769B /* ConnexionController.swift */,
+				C1D7D87C206B8AE300CA9BE6 /* FilController.swift */,
+				C1D7D879206B89C600CA9BE6 /* NavEtTab */,
+				C1D7D87E206B8B1D00CA9BE6 /* searchController.swift */,
+				C1D7D87F206B8B1D00CA9BE6 /* searchController.xib */,
+				C1D7D882206B8B6C00CA9BE6 /* publicationController.swift */,
+				C1D7D883206B8B6C00CA9BE6 /* publicationController.xib */,
+				C1D7D888206B9C6F00CA9BE6 /* ProfileController.swift */,
+				C1D7D88C206BA9F500CA9BE6 /* RecipeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -184,6 +210,15 @@
 				C1D7D876206AE48000CA9BE6 /* Constantes.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C1D7D879206B89C600CA9BE6 /* NavEtTab */ = {
+			isa = PBXGroup;
+			children = (
+				C1D7D87A206B8A2100CA9BE6 /* MyTabBar.swift */,
+				C1D7D88A206B9C9800CA9BE6 /* MyNav.swift */,
+			);
+			path = NavEtTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +283,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D7D885206B8B6C00CA9BE6 /* publicationController.xib in Resources */,
 				C15640362067A43E0082769B /* LaunchScreen.storyboard in Resources */,
+				C1D7D881206B8B1D00CA9BE6 /* searchController.xib in Resources */,
 				C12E7C6A206AA07D009A0AFF /* UsernameView.xib in Resources */,
 				C156403E2067A4F30082769B /* GoogleService-Info.plist in Resources */,
 				C156404C2067B98C0082769B /* ConnexionView.xib in Resources */,
@@ -346,18 +383,25 @@
 			files = (
 				C156402E2067A43E0082769B /* ViewController.swift in Sources */,
 				C12E7C64206A6680009A0AFF /* BDD.swift in Sources */,
+				C1D7D88D206BA9F500CA9BE6 /* RecipeController.swift in Sources */,
 				C15640482067B4690082769B /* LogoView.swift in Sources */,
 				C156404A2067B9690082769B /* ConnexionView.swift in Sources */,
 				C156404E2067BA8F0082769B /* UIExtensions.swift in Sources */,
+				C1D7D880206B8B1D00CA9BE6 /* searchController.swift in Sources */,
 				C1D7D877206AE48000CA9BE6 /* Constantes.swift in Sources */,
 				C11C183C2067E96000E76320 /* Alerte.swift in Sources */,
 				C12E7C60206A3349009A0AFF /* User.swift in Sources */,
+				C1D7D87B206B8A2100CA9BE6 /* MyTabBar.swift in Sources */,
 				C156402C2067A43E0082769B /* AppDelegate.swift in Sources */,
 				C12E7C68206AA012009A0AFF /* UsernameView.swift in Sources */,
 				C12E7C62206A6542009A0AFF /* ref.swift in Sources */,
 				C15640502067CA120082769B /* mydelightButton.swift in Sources */,
+				C1D7D889206B9C6F00CA9BE6 /* ProfileController.swift in Sources */,
+				C1D7D884206B8B6C00CA9BE6 /* publicationController.swift in Sources */,
+				C1D7D87D206B8AE300CA9BE6 /* FilController.swift in Sources */,
 				C12E7C66206A6700009A0AFF /* Typealias.swift in Sources */,
 				C15640462067B2420082769B /* ConnexionController.swift in Sources */,
+				C1D7D88B206B9C9800CA9BE6 /* MyNav.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

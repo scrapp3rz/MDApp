@@ -9,7 +9,7 @@
 import UIKit
 
 
-class mydelightButton: UIButton {
+class MyDelightButtons: UIButton {
 
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -8,9 +8,14 @@
 
 import UIKit
 import Firebase
+import GoogleSignIn
+
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+
+    
+    
 
     var window: UIWindow?
 
@@ -19,12 +24,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.rootViewController = ConnexionController()
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
         
         FirebaseApp.configure()
         // Override point for customization after application launch.
         return true
     }
 
+func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+    guard let controller = GIDSignIn.sharedInstance().uiDelegate as? ViewController else { return }
+    if let error = error {
+        ErrorDisplay.shared.error(message: error.localizedDescription, controller: controller)
+    }
+    if let auth = user.authentication {
+        let credential = GoogleAuthProvider.credential(withIDToken: auth.idToken, accessToken: auth.accessToken)
+        controller.connectWith(credential)
+    }
+}
+
+    
+    
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

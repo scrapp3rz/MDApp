@@ -38,6 +38,10 @@ class ConnexionController: UIViewController {
          - afficher une vue avec identification
          - verifier si user existe
          - afficher une vue pour enregistrer un user avec username unique
+         - configurer la connection via Facebook
+         - configurer la connection via Twitter
+         - configurer la connection via Google
+         - vérifier que la déconnection fonctionne
          */
         
         
@@ -68,7 +72,7 @@ class ConnexionController: UIViewController {
                         if nsErreur.code == 17011 {
                             Auth.auth().createUser(withEmail: mail, password: mdp, completion: {(user, error) in
                                 if let erreur = error {
-                                    Alerte().simpleError(controller: self, message: erreur.localizedDescription)
+                                    ErrorDisplay().UserInputError(title: "Erreur", controller: self, message: erreur.localizedDescription)
                                 }
                                 if user != nil {
                                     // transition vers UsernameVue
@@ -76,7 +80,7 @@ class ConnexionController: UIViewController {
                                 }
                             })
                         } else {
-                            Alerte().simpleError(controller: self, message: erreur.localizedDescription)
+                            ErrorDisplay().UserInputError(title: "Erreur", controller: self, message: erreur.localizedDescription)
 
                         }
                     }
@@ -87,10 +91,10 @@ class ConnexionController: UIViewController {
                     
                 })
             } else {
-                Alerte().simpleError(controller: self, message: "Vous devez entrer un mot de passe")
+                ErrorDisplay().UserInputError(title: "erreur", controller: self, message: "Vous devez entrer un mot de passe")
             }
         } else {
-            Alerte().simpleError(controller: self, message: "Vous devez entrer une adresse mail")
+            ErrorDisplay().UserInputError(title: "erreur", controller: self, message: "Vous devez entrer une adresse mail")
         }
         
     }
@@ -115,6 +119,17 @@ class ConnexionController: UIViewController {
         }
     }
     
+    func unAuth() {
+        do {
+            try Auth.auth().signOut()
+            ErrorDisplay().UserInputError(title: "Erreur", controller: self, message: "Vous êtes déconnecté")
+        } catch let erreur as NSError {
+            ErrorDisplay().UserInputError(title: "Erreur", controller: self, message: erreur.localizedDescription)
+        }
+    }
+    
+    
+    
     func goToApp() {
         // instancier le tabBar
      //   print("en direction de l'appli/tabBar")
@@ -122,6 +137,7 @@ class ConnexionController: UIViewController {
         self.present(tab, animated: true, completion: nil)
         
     }
+    
     
     
     

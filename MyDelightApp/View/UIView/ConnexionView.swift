@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 class ConnexionView: UIView {
 
@@ -14,7 +15,11 @@ class ConnexionView: UIView {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
-    @IBOutlet weak var validButton: mydelightButton!
+    @IBOutlet weak var validButton: MyDelightButtons!
+    
+    @IBOutlet weak var FacebookSignInButton: FBSDKButton!
+    
+    @IBOutlet weak var TwitterConnexionContainer: UIView!
     
     
     
@@ -41,6 +46,15 @@ class ConnexionView: UIView {
     @IBAction func validButtonAction(_ sender: Any) {
         connexionController?.validateConnexion(mailAdress: mailTextField.text, passWord: passwordTextField.text)
     }
+    
+    @IBAction func GoogleSignInButton(_ sender: Any) {
+    }
+    
+    
+    
+    
+    
+    
     
     
     

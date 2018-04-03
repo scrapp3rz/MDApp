@@ -16,26 +16,22 @@ class MyTabBar: UITabBarController {
         tabBar.backgroundColor = .white
         tabBar.tintColor = .black
         
-
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
         
-        let fil = FilController(collectionViewLayout: layout)
+        let fil = IndexController(collectionViewLayout: layout)
         let recipe = RecipeController(style: .plain)
         let profile = ProfileController(collectionViewLayout: layout)
         
-        
         viewControllers = [
             add(controller: fil, image: #imageLiteral(resourceName: "tab_accueil"), title: "Accueil"),
-            add(controller: searchController(), image: #imageLiteral(resourceName: "Search"), title: "recherche"),
-            add(controller: publicationController(), image: #imageLiteral(resourceName: "tab_photo"), title: "Ajouter"),
+            add(controller: SearchController(), image: #imageLiteral(resourceName: "Search"), title: "Recherche"),
+            add(controller: PublicationController(), image: #imageLiteral(resourceName: "tab_photo"), title: "Ajouter"),
             add(controller: recipe, image: #imageLiteral(resourceName: "tab_notif"), title: "Recettes"),
             add(controller: profile, image: #imageLiteral(resourceName: "profil"), title: "Profil")
             
         ]
-        
-        
         
     }
 

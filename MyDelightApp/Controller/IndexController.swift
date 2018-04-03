@@ -10,7 +10,7 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class FilController: UICollectionViewController {
+class IndexController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
